@@ -14,8 +14,6 @@
 		19F315202546511C008F1527 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19F3151E2546511C008F1527 /* Main.storyboard */; };
 		19F315222546511F008F1527 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19F315212546511F008F1527 /* Assets.xcassets */; };
 		19F315252546511F008F1527 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19F315232546511F008F1527 /* LaunchScreen.storyboard */; };
-		19F315302546511F008F1527 /* AssistiveButtonsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F3152F2546511F008F1527 /* AssistiveButtonsTests.swift */; };
-		19F3153B2546511F008F1527 /* AssistiveButtonsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F3153A2546511F008F1527 /* AssistiveButtonsUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,11 +44,7 @@
 		19F315242546511F008F1527 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		19F315262546511F008F1527 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		19F3152B2546511F008F1527 /* AssistiveButtonsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AssistiveButtonsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		19F3152F2546511F008F1527 /* AssistiveButtonsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistiveButtonsTests.swift; sourceTree = "<group>"; };
-		19F315312546511F008F1527 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		19F315362546511F008F1527 /* AssistiveButtonsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AssistiveButtonsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		19F3153A2546511F008F1527 /* AssistiveButtonsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistiveButtonsUITests.swift; sourceTree = "<group>"; };
-		19F3153C2546511F008F1527 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,8 +76,6 @@
 			isa = PBXGroup;
 			children = (
 				19F315172546511C008F1527 /* AssistiveButtons */,
-				19F3152E2546511F008F1527 /* AssistiveButtonsTests */,
-				19F315392546511F008F1527 /* AssistiveButtonsUITests */,
 				19F315162546511C008F1527 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -111,24 +103,6 @@
 				19516772254768C500BD0F93 /* splash.png */,
 			);
 			path = AssistiveButtons;
-			sourceTree = "<group>";
-		};
-		19F3152E2546511F008F1527 /* AssistiveButtonsTests */ = {
-			isa = PBXGroup;
-			children = (
-				19F3152F2546511F008F1527 /* AssistiveButtonsTests.swift */,
-				19F315312546511F008F1527 /* Info.plist */,
-			);
-			path = AssistiveButtonsTests;
-			sourceTree = "<group>";
-		};
-		19F315392546511F008F1527 /* AssistiveButtonsUITests */ = {
-			isa = PBXGroup;
-			children = (
-				19F3153A2546511F008F1527 /* AssistiveButtonsUITests.swift */,
-				19F3153C2546511F008F1527 /* Info.plist */,
-			);
-			path = AssistiveButtonsUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,7 +246,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19F315302546511F008F1527 /* AssistiveButtonsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +253,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19F3153B2546511F008F1527 /* AssistiveButtonsUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
