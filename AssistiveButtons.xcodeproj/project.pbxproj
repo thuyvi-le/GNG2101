@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19516773254768C500BD0F93 /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = 19516772254768C500BD0F93 /* splash.png */; };
 		19F315192546511C008F1527 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F315182546511C008F1527 /* AppDelegate.swift */; };
 		19F3151B2546511C008F1527 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F3151A2546511C008F1527 /* ViewController.swift */; };
 		19F3151D2546511C008F1527 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 19F3151C2546511C008F1527 /* Experience.rcproject */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		19516772254768C500BD0F93 /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = splash.png; path = ../../../../splash.png; sourceTree = "<group>"; };
 		19F315152546511C008F1527 /* AssistiveButtons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AssistiveButtons.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19F315182546511C008F1527 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19F3151A2546511C008F1527 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				19F315212546511F008F1527 /* Assets.xcassets */,
 				19F315232546511F008F1527 /* LaunchScreen.storyboard */,
 				19F315262546511F008F1527 /* Info.plist */,
+				19516772254768C500BD0F93 /* splash.png */,
 			);
 			path = AssistiveButtons;
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 				19F315252546511F008F1527 /* LaunchScreen.storyboard in Resources */,
 				19F315222546511F008F1527 /* Assets.xcassets in Resources */,
 				19F315202546511C008F1527 /* Main.storyboard in Resources */,
+				19516773254768C500BD0F93 /* splash.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
