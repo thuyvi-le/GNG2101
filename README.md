@@ -1,3 +1,3 @@
 # GNG2101
 
-UML: https://app.lucidchart.com/invitations/accept/4b034a10-eba5-480a-ad85-47922ff1bbcb
+https://docs.google.com/document/d/1VcnVHRXWBLtOklmSijU0VI3joTTNobX86YBZ9OgdHJw/edit#
