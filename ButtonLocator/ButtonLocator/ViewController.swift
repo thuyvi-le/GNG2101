@@ -27,8 +27,13 @@ class ViewController: UIViewController {
             return
         }
 
-        session.beginConfiguration()
-        session.sessionPreset = .vga640x480 //See if resolution can be made smaller
+        /// Original
+        /// session.beginConfiguration()
+        /// session.sessionPreset = .vga640x480 //See if resolution can be made smaller
+        
+        if ([session.canSetSessionPreset:AVCaptureSessionPreset640x480]) {
+            [session.setSessionPreset:AVCaptureSessionPreset640x480]; //Can also do Low, Med,High and Photo capture preset
+        }
 
         //Add video input to session by adding the camera as a device
         guard session.canAddInput(deviceInput) else {
