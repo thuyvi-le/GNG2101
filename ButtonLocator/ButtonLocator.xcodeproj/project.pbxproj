@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		192FED8C2550C599001AF787 /* VisionObjectRecognitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192FED8B2550C599001AF787 /* VisionObjectRecognitionViewController.swift */; };
 		198E37902549C286006B4F3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198E378F2549C286006B4F3C /* AppDelegate.swift */; };
 		198E37922549C286006B4F3C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198E37912549C286006B4F3C /* SceneDelegate.swift */; };
 		198E37942549C286006B4F3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198E37932549C286006B4F3C /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		192FED8B2550C599001AF787 /* VisionObjectRecognitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionObjectRecognitionViewController.swift; sourceTree = "<group>"; };
 		198E378C2549C286006B4F3C /* ButtonLocator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ButtonLocator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		198E378F2549C286006B4F3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		198E37912549C286006B4F3C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				198E378F2549C286006B4F3C /* AppDelegate.swift */,
 				198E37912549C286006B4F3C /* SceneDelegate.swift */,
 				198E37932549C286006B4F3C /* ViewController.swift */,
+				192FED8B2550C599001AF787 /* VisionObjectRecognitionViewController.swift */,
 				198E37952549C286006B4F3C /* Main.storyboard */,
 				198E37982549C288006B4F3C /* Assets.xcassets */,
 				198E379A2549C288006B4F3C /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				198E37942549C286006B4F3C /* ViewController.swift in Sources */,
+				192FED8C2550C599001AF787 /* VisionObjectRecognitionViewController.swift in Sources */,
 				198E37902549C286006B4F3C /* AppDelegate.swift in Sources */,
 				198E37922549C286006B4F3C /* SceneDelegate.swift in Sources */,
 			);
