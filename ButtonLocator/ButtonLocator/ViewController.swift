@@ -6,14 +6,14 @@
 //
 
 import UIKit
+import Vision
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        import UIKit
-        import Vision
+
+        // OBJECT RECOGNITION //
 
         //Configure camera to use for capture
         private let session = AVCaptureSession()
@@ -127,9 +127,67 @@ class ViewController: UIViewController {
             detectionOverlay.addSublayer(shapeLayer)
         }
 
+        // OBJECT TRACKING //
 
+        //Nominate Objects or Rectangles to Track
+        var inputObservations = [UUID: VNDetectedObjectObservation]()
+        var trackedObjects = [UUID: TrackedPolyRect]()
+
+        switch type {
+	        case .object:
+	            for rect in self.objectsToTrack {
+	                let inputObservation = VNDetectedObjectObservation(boundingBox: rect.boundingBox)
+	                inputObservations[inputObservation.uuid] = inputObservation
+	                trackedObjects[inputObservation.uuid] = rect
+	            }
+	        case .rectangle:
+	            for rectangleObservation in initialRectObservations {
+	                inputObservations[rectangleObservation.uuid] = rectangleObservation
+	                let rectColor = TrackedObjectsPalette.color(atIndex: trackedObjects.count)
+	                trackedObjects[rectangleObservation.uuid] = TrackedPolyRect(observation: rectangleObservation, color: rectColor)
+	            }
+        }
+
+        //Track Objects or Rectangles with a Request Handler
+        let request: VNTrackingRequest!
+        switch type {
+	        case .object:
+	            request = VNTrackObjectRequest(detectedObjectObservation: inputObservation.value)
+	        case .rectangle:
+	            guard let rectObservation = inputObservation.value as? VNRectangleObservation else {
+	                continue
+	            }
+	            request = VNTrackRectangleRequest(rectangleObservation: rectObservation)
+        }
+        request.trackingLevel = trackingLevel
+
+        trackingRequests.append(request)
+
+        try requestHandler.perform(trackingRequests, on: frame, orientation: videoReader.orientation)
+
+        //Interpret tracking results **results property in VNDetectedObjectObservation object describes location in frame
+
+        guard let results = processedRequest.results as? [VNObservation] else {
+            continue
+        }
+        guard let observation = results.first as? VNDetectedObjectObservation else {
+            continue
+        }
+        // Assume threshold = 0.5f
+        let rectStyle: TrackedPolyRectStyle = observation.confidence > 0.5 ? .solid : .dashed
+        let knownRect = trackedObjects[observation.uuid]!
+        switch type {
+	        case .object:
+	            rects.append(TrackedPolyRect(observation: observation, color: knownRect.color, style: rectStyle))
+	        case .rectangle:
+	            guard let rectObservation = observation as? VNRectangleObservation else {
+	                break
+	            }
+	            rects.append(TrackedPolyRect(observation: rectObservation, color: knownRect.color, style: rectStyle))
+        }
+
+        inputObservations[observation.uuid] = observation //seed next round of tracking
     }
 
-
-}
+} //End of ViewController
 
