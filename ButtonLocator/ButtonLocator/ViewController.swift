@@ -28,6 +28,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     override func viewDidLoad() {
         super.viewDidLoad()
         setupAVCapture()
+    
     }
     
     override func didReceiveMemoryWarning() {
