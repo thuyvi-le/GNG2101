@@ -1,9 +1,3 @@
-<<<<<<< Updated upstream
-Hello world
-=======
-# GNG2101
+# GNG2101-B23-Elevaider
 
-Hey
-
-Hi
->>>>>>> Stashed changes
+> An iOS based application that uses object recognition and tracking to guide visually impaired users to elevator buttons.
