@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		192FED8C2550C599001AF787 /* VisionObjectRecognitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192FED8B2550C599001AF787 /* VisionObjectRecognitionViewController.swift */; };
-		192FED952551E337001AF787 /* ButtonDetector.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 192FED942551E337001AF787 /* ButtonDetector.mlmodel */; };
 		198E37902549C286006B4F3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198E378F2549C286006B4F3C /* AppDelegate.swift */; };
 		198E37922549C286006B4F3C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198E37912549C286006B4F3C /* SceneDelegate.swift */; };
 		198E37942549C286006B4F3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198E37932549C286006B4F3C /* ViewController.swift */; };
@@ -16,11 +15,11 @@
 		198E37992549C288006B4F3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 198E37982549C288006B4F3C /* Assets.xcassets */; };
 		198E379C2549C288006B4F3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 198E379A2549C288006B4F3C /* LaunchScreen.storyboard */; };
 		19A942262565B1AE000019C1 /* launchscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 19A942252565B1AE000019C1 /* launchscreen.png */; };
+		19A9423A25675C98000019C1 /* ButtonLocator.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 19A9423925675C98000019C1 /* ButtonLocator.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		192FED8B2550C599001AF787 /* VisionObjectRecognitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionObjectRecognitionViewController.swift; sourceTree = "<group>"; };
-		192FED942551E337001AF787 /* ButtonDetector.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ButtonDetector.mlmodel; sourceTree = "<group>"; };
 		198E378C2549C286006B4F3C /* ButtonLocator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ButtonLocator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		198E378F2549C286006B4F3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		198E37912549C286006B4F3C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +29,7 @@
 		198E379B2549C288006B4F3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		198E379D2549C288006B4F3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		19A942252565B1AE000019C1 /* launchscreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchscreen.png; sourceTree = "<group>"; };
+		19A9423925675C98000019C1 /* ButtonLocator.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ButtonLocator.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,10 +66,10 @@
 				198E37912549C286006B4F3C /* SceneDelegate.swift */,
 				198E37932549C286006B4F3C /* ViewController.swift */,
 				192FED8B2550C599001AF787 /* VisionObjectRecognitionViewController.swift */,
-				192FED942551E337001AF787 /* ButtonDetector.mlmodel */,
 				198E37952549C286006B4F3C /* Main.storyboard */,
 				198E37982549C288006B4F3C /* Assets.xcassets */,
 				198E379A2549C288006B4F3C /* LaunchScreen.storyboard */,
+				19A9423925675C98000019C1 /* ButtonLocator.mlmodel */,
 				19A942252565B1AE000019C1 /* launchscreen.png */,
 				198E379D2549C288006B4F3C /* Info.plist */,
 			);
@@ -149,9 +149,9 @@
 			files = (
 				198E37942549C286006B4F3C /* ViewController.swift in Sources */,
 				192FED8C2550C599001AF787 /* VisionObjectRecognitionViewController.swift in Sources */,
-				192FED952551E337001AF787 /* ButtonDetector.mlmodel in Sources */,
 				198E37902549C286006B4F3C /* AppDelegate.swift in Sources */,
 				198E37922549C286006B4F3C /* SceneDelegate.swift in Sources */,
+				19A9423A25675C98000019C1 /* ButtonLocator.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
