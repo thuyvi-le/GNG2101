@@ -14,7 +14,9 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     var bufferSize: CGSize = .zero
     var rootLayer: CALayer! = nil
     
+    @IBOutlet weak var messageLabel: UILabel!
     @IBOutlet weak private var previewView: UIView!
+    
     private let session = AVCaptureSession()
     private var previewLayer: AVCaptureVideoPreviewLayer! = nil
     private let videoDataOutput = AVCaptureVideoDataOutput()
@@ -28,7 +30,19 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     override func viewDidLoad() {
         super.viewDidLoad()
         setupAVCapture()
+        
+        //add message to view
+        self.view.addSubview(messageLabel)
+    }
     
+    @IBAction func changeMessage(found: Bool, sender: UIView?) {
+        if(found == true){
+            messageLabel.text = "Elevator button located!"
+            messageLabel.textColor = .green
+        }else{
+            messageLabel.text = "No elevator button in view"
+            messageLabel.textColor = .lightGray
+        }
     }
     
     override func didReceiveMemoryWarning() {

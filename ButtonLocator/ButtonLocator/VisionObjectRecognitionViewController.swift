@@ -15,6 +15,8 @@ class VisionObjectRecognitionViewController: ViewController {
     // Vision parts
     private var requests = [VNRequest]()
     
+    var found = false
+    
     @discardableResult
     func setupVision() -> NSError? {
         // Setup Vision parts
@@ -65,6 +67,17 @@ class VisionObjectRecognitionViewController: ViewController {
         }
         self.updateLayerGeometry()
         CATransaction.commit()
+        
+        //checks if there are any Results
+        if !results.isEmpty {
+            found = true
+            
+        } else{
+            found = false
+        }
+        
+        //changes message on screen accordingly
+        changeMessage(found: found,sender: nil)
     }
     
     override func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
