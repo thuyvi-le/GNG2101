@@ -18,17 +18,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="launchscreen.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ycw-9c-Iw5">
-                                <rect key="frame" x="0.0" y="75" width="359" height="592"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchscreen.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ycw-9c-Iw5">
+                                <rect key="frame" x="32.5" y="70" width="310" height="577"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="Ycw-9c-Iw5" secondAttribute="height" multiplier="75:100" id="TMx-92-Mav"/>
+                                    <constraint firstAttribute="width" secondItem="Ycw-9c-Iw5" secondAttribute="height" multiplier="310:577" id="Xyv-wH-NdS"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="yaD-8z-pXn" firstAttribute="top" secondItem="Ycw-9c-Iw5" secondAttribute="bottom" constant="65" id="YwT-TT-Evi"/>
-                            <constraint firstItem="Ycw-9c-Iw5" firstAttribute="top" secondItem="aH0-dZ-gW9" secondAttribute="bottom" constant="75" id="fA0-oX-EWM"/>
+                            <constraint firstItem="Ycw-9c-Iw5" firstAttribute="top" secondItem="aH0-dZ-gW9" secondAttribute="bottom" constant="70" id="63j-9F-G88"/>
+                            <constraint firstItem="yaD-8z-pXn" firstAttribute="top" secondItem="Ycw-9c-Iw5" secondAttribute="bottom" constant="20" id="DB0-2u-9Nz"/>
                             <constraint firstItem="Ycw-9c-Iw5" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="jSL-Oy-yRi"/>
                         </constraints>
                     </view>
