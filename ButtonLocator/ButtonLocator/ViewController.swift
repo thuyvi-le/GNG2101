@@ -37,8 +37,9 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     
     @IBAction func changeMessage(found: Bool, sender: UIView?) {
         if(found == true){
-            messageLabel.text = "Elevator button located!"
+            messageLabel.text = "Elevator button located!\nStraight ahead"
             messageLabel.textColor = .green
+            
         }else{
             messageLabel.text = "No elevator button in view"
             messageLabel.textColor = .lightGray
