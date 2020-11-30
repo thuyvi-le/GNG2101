@@ -35,9 +35,8 @@ class VisionObjectRecognitionViewController: ViewController {
                     }
                 })
             })
-            objectRecognition.imageCropAndScaleOption = .scaleFill
-
             
+            objectRecognition.imageCropAndScaleOption = .scaleFill
             self.requests = [objectRecognition]
         } catch let error as NSError {
             print("Model loading went wrong: \(error)")
