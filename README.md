@@ -12,6 +12,6 @@ Elevaider is an iOS based application that uses object recognition and tracking 
 **Performance Specs:**
 ![Performance](https://github.com/thuyvi-le/GNG2101_Elevaider/blob/main/Performance/Screen%20Shot%202020-11-25%20at%203.00.36%20PM.png?raw=true)
 
-![Performance](https://github.com/thuyvi-le/GNG2101_Elevaider/blob/main/Performance/Screen%20Shot%202020-11-25%20at%203.00.36%20PM.png?raw=true)
+![Performance](https://github.com/thuyvi-le/GitHub_GNG2101_Elevaider/blob/main/Performance/Screen%20Shot%202020-11-25%20at%203.00.47%20PM.png?raw=true)
 
-![Performance](https://github.com/thuyvi-le/GNG2101_Elevaider/blob/main/Performance/Screen%20Shot%202020-11-25%20at%203.00.36%20PM.png?raw=true)
+![Performance](https://github.com/thuyvi-le/GitHub_GNG2101_Elevaider/blob/main/Performance/Screen%20Shot%202020-11-25%20at%203.00.44%20PM.png?raw=true)
