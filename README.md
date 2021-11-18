@@ -3,10 +3,11 @@
 ![forthebadge](https://forthebadge.com/images/badges/made-with-swift.svg)
 [![forthebadge](https://forthebadge.com/images/badges/cc-by.svg)](https://creativecommons.org/licenses/by/4.0)
 
-**:trophy: Design Day Winner for Accessibility 3**
+**:trophy:  Design Day Winner for Accessibility 3**
 
-Elevaider is an iOS based application that uses object recognition and tracking to guide visually impaired users to elevator buttons.\
-**[Demo Video](https://youtu.be/hHGptZLmvfw)**
+Elevaider is an iOS based application that uses object recognition and tracking to guide visually impaired users to elevator buttons.
+
+# [Demo Video](https://youtu.be/hHGptZLmvfw)
 
 **Wireframe:**
 ![Wireframe](https://github.com/thuyvi-le/GNG2101/blob/main/Image/wireframe.png?raw=true)
